@@ -4,7 +4,6 @@ function Hero() {
   return (
     <section className="hero">
       <div className="container">
-        <p className="hero-label">$ whoami</p>
         <h1 className="hero-name">{portfolio.name}</h1>
         <p className="hero-title">{portfolio.title}</p>
         <p className="hero-desc">{portfolio.about}</p>
