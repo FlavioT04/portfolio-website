@@ -1,19 +1,21 @@
-import { portfolio } from "../data"
+import { portfolio } from '../data'
 
 function Hero() {
-    return (
-     <section>
-        <p>$ whoami</p>
-        <h1>{portfolio.name}</h1>
-        <p>{portfolio.title}</p>
-        <p>{portfolio.about}</p>
-        <div>
-            <a href={portfolio.github} target="_blank" rel="nonreferrer">GitHub</a>
-            <a href={portfolio.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href={`mailto:${portfolio.email}`}>Email</a>
+  return (
+    <section className="hero">
+      <div className="container">
+        <p className="hero-label">$ whoami</p>
+        <h1 className="hero-name">{portfolio.name}</h1>
+        <p className="hero-title">{portfolio.title}</p>
+        <p className="hero-desc">{portfolio.about}</p>
+        <div className="hero-links">
+          <a href={portfolio.github} target="_blank" rel="noreferrer" className="btn btn-primary">GitHub</a>
+          <a href={portfolio.linkedin} target="_blank" rel="noreferrer" className="btn btn-secondary">LinkedIn</a>
+          <a href={`mailto:${portfolio.email}`} className="btn btn-secondary">Email</a>
         </div>
-     </section>   
-    )
+      </div>
+    </section>
+  )
 }
 
 export default Hero
