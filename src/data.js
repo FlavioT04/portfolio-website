@@ -7,8 +7,7 @@ export const portfolio = {
     github: "https://github.com/FlavioT04",
     linkedin: "https://www.linkedin.com/in/flaviomt1/",
     about: `I'm currently studying Computer Science and Math at Memorial University of Newfoundland. ` +
-            `I enjoy theoretical computer science and learning about programming languages. ` +
-            `I also like typing on the keyboard; like, seriously I just find hitting keys satisfying.`,
+            `I enjoy studying theory and learning stuff I will likely never use in my life.`,
     education: {
         school: "Memorial University of Newfoundland",
         degree: "Bachelor of Science (Hons) - Computer Science & Math",
@@ -22,6 +21,7 @@ export const portfolio = {
             period: "In Progress",
             tech: ["Java", "Eclipse"],
             description: "Developing a Lox interpreter in Java based on Crafting Interpreters by Robert Nystrom.",
+            url: "https://github.com/FlavioT04/lox-interpreter-java",
         },
         {
             id: 2,
@@ -30,6 +30,7 @@ export const portfolio = {
             period: "Winter 2026",
             tech: ["Python", "NumPy", "Pandas", "Jupyter", "Matplotlib", "Scikit-learn"],
             description: "Built a linear regression model to predict precipitation in London using historical weather data.",
+            url: "https://github.com/FlavioT04/london-precipitation-predictor",
         },
         {
             id: 3,
@@ -38,6 +39,7 @@ export const portfolio = {
             period: "Fall 2025",
             tech: ["Python", "Airflow", "Kafka", "Confluent Cloud", "PostgreSQL"],
             description: "Built a streaming ELT data pipeline that ingests stock market data, loads it into a database, and transforms raw records into analytics-ready tables.",
+            url: "https://github.com/FlavioT04/streaming-stock-elt",
         },
         {
             id: 4,
@@ -46,6 +48,7 @@ export const portfolio = {
             period: "Spring 2025",
             tech: ["Tableau"],
             description: "Built an interactive Tableau dashboard comparing countries by GDP per capita to evaluate market opportunities for a fictional rail travel booking startup.",
+            url: "https://public.tableau.com/views/RailTravelMarketAnalysisDashboard/Dashboard2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
         },
     ],
     skills: {
@@ -76,10 +79,10 @@ export const portfolio = {
         },
     ],
     certificates: [
-        { id: 1, name: "Snowflake Data Engineering", date: "Jan 2026" },
-        { id: 2, name: "ELT and Data Pipelines with Shell, Airflow, and Kafka", date: "Dec 2025" },
-        { id: 3, name: "Linux Commands and Shell Scripting", date: "Dec 2025" },
-        { id: 4, name: "AWS Cloud Technical Essentials", date: "Aug 2025" },
-        { id: 5, name: "Tableau Business Intelligence Analyst", date: "Jun 2025" },
+        { id: 1, name: "Snowflake Data Engineering", date: "Jan 2026", url: "https://coursera.org/share/64676b7542453c20f801bf5058aaa101" },
+        { id: 2, name: "ELT and Data Pipelines with Shell, Airflow, and Kafka", date: "Dec 2025", url: "https://coursera.org/share/8407b100a9f367a92be1fd1a3f29ea32" },
+        { id: 3, name: "Linux Commands and Shell Scripting", date: "Dec 2025", url: "https://coursera.org/share/5867f2d9a23724197ab32d95b506cba4" },
+        { id: 4, name: "AWS Cloud Technical Essentials", date: "Aug 2025", url: "https://coursera.org/share/760630ef2b7d4f10e10367349a5ddf4d" },
+        { id: 5, name: "Tableau Business Intelligence Analyst", date: "Jun 2025", url: "https://coursera.org/share/ab1c2c7d7dc8cd4d470d290c004854bc" },
     ],
 }

@@ -7,7 +7,7 @@ function Projects() {
         <h2 className="section-title">Projects</h2>
         <div className="projects-grid">
           {portfolio.projects.map((project) => (
-            <div key={project.id} className="project-card">
+            <a href={project.url} target="_blank" rel="noreferrer" key={project.id} className="project-card">
               <div className="project-meta">
                 <span className="project-type">{project.type}</span>
                 <span className="project-period">{project.period}</span>
@@ -19,7 +19,7 @@ function Projects() {
                   <span key={t} className="tech-tag">{t}</span>
                 ))}
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

@@ -120,14 +120,6 @@ section {
   margin-bottom: 1.5rem;
 }
 
-.hero-desc {
-  font-size: 0.7rem;
-  color: var(--gb-light);
-  max-width: 580px;
-  margin-bottom: 2.5rem;
-  line-height: 2.4;
-}
-
 .hero-links {
   display: flex;
   gap: 1rem;
@@ -232,6 +224,7 @@ section {
 .project-card:hover {
   transform: translate(-2px, -2px);
   box-shadow: 8px 8px 0 var(--gb-darkest);
+  border-color: var(--gb-lightest);
 }
 
 .project-meta {
@@ -386,6 +379,8 @@ section {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  transition: transform 0.1s, box-shadow 0.1s, border-color 0.1s;
+  cursor: pointer;
 }
 
 .certificate-name {
@@ -398,6 +393,12 @@ section {
   font-size: 0.6rem;
   color: var(--gb-mid);
   white-space: nowrap;
+}
+
+.certificate-item:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--gb-darkest);
+  border-color: var(--gb-lightest);
 }
 
 /* ── Contact ─────────────────────────────── */
@@ -434,41 +435,11 @@ section {
 .contact-link:hover {
   border-color: var(--gb-light);
   background-color: var(--gb-dark);
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 var(--gb-darkest);
 }
 
 .contact-label {
   color: var(--gb-mid);
   min-width: 80px;
-}
-
-/* ── Footer ──────────────────────────────── */
-.footer {
-  border-top: 4px solid var(--gb-dark);
-  padding: 1.5rem 0;
-}
-
-.footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-name {
-  font-size: 0.6rem;
-  color: var(--gb-mid);
-}
-
-.footer-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.footer-links a {
-  font-size: 0.6rem;
-  color: var(--gb-mid);
-  transition: color 0.1s;
-}
-
-.footer-links a:hover {
-  color: var(--gb-lightest);
 }

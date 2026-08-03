@@ -7,10 +7,10 @@ function Certificates() {
         <h2 className="section-title">Certificates</h2>
         <div className="certificates-list">
           {portfolio.certificates.map((cert) => (
-            <div key={cert.id} className="certificate-item">
+            <a href={cert.url} target="_blank" rel="noreferrer" key={cert.id} className="certificate-item">
               <span className="certificate-name">{cert.name}</span>
               <span className="certificate-date">{cert.date}</span>
-            </div>
+            </a>
           ))}
         </div>
       </div>
